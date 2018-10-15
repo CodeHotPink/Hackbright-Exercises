@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ubermelon Order Form</title>
+	</head>
+	<body>
+		<h1>Order!</h1>
+		<h3>Prices</h3>
+	</body>
+	<table>
+		<tr>
+			<th>Melon Name</th>
+			<th>Price per lb</th>
+		</tr>
+		<tr>
+			<th>Watermelon</th>
+			<th>$1.59</th>
+		</tr>
+		<tr>
+			<th>Honeydew</th>
+			<th>$0.99</th>
+		</tr>
+		<tr>
+			<th>Canteloupe</th>
+			<th>$1.29</th>
+		</tr>
+		<tr>
+			<th>Crenshaw</th>
+			<th>$2.19</th>
+		</tr>
+		<tr>
+			<th>Canary</th>
+			<th>$11.99</th>
+		</tr>
+	</table>
+	<body>
+		<p>Place your orders here! You know you want to.</p>
+	</body>
+	<form>
+		<p>First Name: <input type="text" name="firstname"></p>
+		<p>Last Name: <input type="text" name="lastname"></p>
+		<p>Melon Type: 
+			<select name="melontype">
+				<option value="watermelon">Watermelon</option>
+				<option value="honeydew">Honeydew</option>
+				<option value="canteloupe">Canteloupe</option>
+				<option value="crenshaw">Crenshaw</option>
+				<option value="canary">Canary</option>
+			</select></p>
+		<p>Quantity*: <input type="text" name="quantity"></p>
+		<p>Delivery Time: 
+			<input type="radio" name="time" value="am">12:00am - 12:00pm
+			<input type="radio" name="time" value="pm">12:00pm - 12:00am
+			<input type="radio" name="time" value="wat">Time is an illusion</p>
+		<p>Return Customer?
+			<input type="radio" name="returning" value="yes">Yes
+			<input type="radio" name="returning" value="no">No</p>
+		<p>Statistics:
+			<input type="checkbox" name="stats" value="dog">Dog
+			<input type="checkbox" name="stats" value="cat">Cat
+			<input type="checkbox" name="stats" value="Hedgehog">Hedgehog
+			<input type="checkbox" name="stats" value="yak">Yak
+			<input type="checkbox" name="stats" value="balloonicorn">Balloonicorn</p>
+		<p><form action="https://ubermelon-order-form.herokuapp.com/process" method="GET">
+			<input type="submit">
+		</form></p>
+	</form>
+	<footer>
+		<p>*Quantities given are by the flat.</p>
+</html>
