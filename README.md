@@ -1,2 +1,2 @@
 # Hackbright-Exercises
-Exercises from Hackbright
+Organized by date & excercise name
